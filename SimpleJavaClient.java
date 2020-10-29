@@ -6,8 +6,8 @@ public class SimpleJavaClient {
 
     public static void main(String[] args) 	{
         try {
-            Socket s = new Socket("127.0.0.1", 9999);
-            Socket d = new Socket("127.0.0.1", 10000);
+            Socket s = new Socket("localhost", 9999);
+            Socket d = new Socket("localhost", 10000);
             InputStream iServerA = s.getInputStream();
             OutputStream oServerA = s.getOutputStream();
             InputStream iServerB = d.getInputStream();
